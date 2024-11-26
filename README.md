@@ -18,4 +18,5 @@ This project demonstrates a Retrieval-Augmented Generation (RAG) application usi
 - OpenAI GPT-3.5-turbo
 
 ### OUTPUT:
-![Streamlit App of RAG Application](https://github.com/user/repo-name/raw/branch-name/images/image-name.jpg)
+![Streamlit App of RAG Application](RAG_1.jpg)
+![Streamlit App of RAG Application](RAG_2.jpg)
