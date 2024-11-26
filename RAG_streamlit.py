@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 import streamlit as st
 import langchain
 from langchain.embeddings.openai import OpenAIEmbeddings
@@ -9,7 +10,11 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import TextLoader
 import faiss
 
-os.environ["OPENAI_API_KEY"] = str(input("YOUR_OPENAI_API_KEY: "))
+# Load environment variables from .env file
+load_dotenv()
+
+# Access the OpenAI API key
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # ---- Step 1: Load and Process Documents ----
 def load_and_split_documents(file_path):
